@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency('msgpack', '~> 1.0')
+  spec.add_dependency('msgpack', '0.5.10')
 
   spec.add_development_dependency('bundler-audit', '>= 0')
   spec.add_development_dependency('rails_stdout_logging', '>= 0')
